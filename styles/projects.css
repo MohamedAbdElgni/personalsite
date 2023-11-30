@@ -7,7 +7,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: fit-content;
 }
 
 body {
@@ -15,10 +15,8 @@ body {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  
+  
 }
 
 ul {
@@ -28,14 +26,16 @@ ul {
 }
 
 .con {
-    position: absolute;
-    width: 90vw;
-    top: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    width: 90%;
     background-color: transparent;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 20px;
-    padding: 20px;
+    padding: 5px;
     justify-content: center;
     border-radius: 8px;
   }
@@ -51,6 +51,7 @@ ul {
     justify-content: space-between;
     border-bottom: 3px solid transparent;
     transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.5);
   }
   
   .pscon:hover {
@@ -116,3 +117,4 @@ ul {
 .linkscon img:hover{
   scale: 1.5;
 }
+

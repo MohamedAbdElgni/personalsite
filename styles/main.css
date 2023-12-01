@@ -9,10 +9,7 @@ body {
   height: 100%;
   background-color: #cbe1f7;
 }
-/* 
-  input[type='radio']{
-    display: none;
-  } */
+
 
 .parent {
   display: grid;
@@ -88,10 +85,6 @@ label a {
   color: rgb(255, 255, 255);
   cursor: pointer;
   font-weight: 500;
-  -webkit-animation: rotate-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: rotate-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    ease-in-out both;
 }
 
 .nav a:active {
@@ -99,10 +92,6 @@ label a {
   color: rgb(255, 255, 255);
   cursor: pointer;
   font-weight: 500;
-  -webkit-animation: rotate-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: rotate-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    ease-in-out both;
 }
 
 .main-nav a:focus {
@@ -119,8 +108,6 @@ label a {
   font-size: 20px;
   font-weight: 700;
   margin: auto;
-  text-align: left;
-  
 }
 .left-con h3 {
   font-size: 20px;
@@ -151,9 +138,10 @@ a {
   color: rgb(14, 15, 15);
 }
 
-.left-box h2{
+.left-box h2 {
   margin-top: 10px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .left-box p :hover {
@@ -178,8 +166,10 @@ a {
 
 .right {
   grid-area: right;
-  background-color: #f39c12;
   border-left: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  text-transform: capitalize;
 }
 
 .center {
@@ -194,6 +184,13 @@ iframe {
 
 iframe::-webkit-scrollbar {
   display: none;
+}
+
+.yout {
+  height: 20%;
+  border-radius: 5px;
+}
+.right {
 }
 
 footer {
@@ -254,35 +251,6 @@ footer {
     margin-bottom: 10px;
   }
 }
-
-/* animation for nav elements */
-@-webkit-keyframes rotate-in-center {
-  0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    opacity: 1;
-  }
-}
-@keyframes rotate-in-center {
-  0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    opacity: 1;
-  }
-}
-/* End for enemation for nav */
-
-/* ani for copy */
 
 @-webkit-keyframes pulsate-bck {
   0% {

@@ -23,6 +23,11 @@ body::-webkit-scrollbar {
   border-radius: 2px;
 }
 
+.front-con{
+  border-right: 1px solid black;
+  border-radius: 0px;
+}
+
 h3 {
   font-size: 20px;
   font-weight: 600;
@@ -123,5 +128,9 @@ h3 {
 @media screen and (max-width: 700px) {
   .con {
     grid-template-columns: 1fr;
+  }
+
+  .front-con{
+    border: none;
   }
 }

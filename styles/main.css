@@ -120,6 +120,7 @@ label a {
   font-weight: 700;
   margin: auto;
   text-align: left;
+  
 }
 .left-con h3 {
   font-size: 20px;
@@ -148,6 +149,11 @@ label a {
 a {
   text-decoration: none;
   color: rgb(14, 15, 15);
+}
+
+.left-box h2{
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .left-box p :hover {
